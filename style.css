@@ -1,0 +1,79 @@
+* {
+    font-family: 'Oswald', sans-serif;
+}
+:root {
+    --everyTextFontSize: 18px;
+    --everyHeadingFontSize: 50px;
+}
+.nav_link:hover {
+    text-decoration: underline;
+}
+.first_block_text , .second_block_text, .second_block_card_text, .third_block_text, .third_block_card_text, .fourth_block_text, .fifth_block_text, .sixth_block_text, .seventh_block_text, .footer_column_text, .footer_link, .nav_link, .button, .input {
+    font-size: var(--everyTextFontSize);
+    font-weight: lighter;
+}
+.navbar, .card, .third_block, .sixth_block, .footer, .modal_window_body {
+    background-color: #303030;
+}
+.second_block_heading, .third_block_heading, .fourth_block_heading, .fifth_block_heading, .sixth_block_heading, .seventh_block_heading {
+    font-size: var(--everyHeadingFontSize);
+}
+.header_logo {
+    height: 40px;
+}
+.search_button, .third_block_card_heading, .second_block_card_heading{
+    height: 20px;
+    font-size: 20px;
+}
+.main_heading {
+    font-size: 100px;
+}
+.statistic, .footer_column_heading{
+    font-size: 30px;
+}
+.statistics_number {
+    font-size: 80px;
+}
+.first_block {
+    height: max-content;
+    background-image: url(images/image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+.fourth_block_image_container {
+    background-image: url(images/image6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fifth_block_image_container {
+    background-image: url(images/image7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+@media screen and (min-width: 1440px) {
+    :root {
+        --everyTextFontSize: 1.4vw;
+        --everyHeadingFontSize: 4vw;
+    }
+    .main_heading {
+        font-size: 8vw;
+    }
+    .header_logo {
+        height: 3.2vw;
+    }
+    .search_button, .third_block_card_heading, .second_block_card_heading {
+        height: 1.6vw;
+        font-size: 1.6vw;
+    }
+    .statistic, .footer_column_heading {
+        font-size: 2.4vw;
+    }
+    .statistics_number {
+        font-size: 6.3vw;
+    }
+}

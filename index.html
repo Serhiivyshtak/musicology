@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first bootstrap page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal_window_body">
+                <div class="modal-header border-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="text-white">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body border-0">
+                    <form class="form-inline">
+                        <input class="form-control rounded-0 w-75 modal_input" type="search" aria-label="Search">
+                        <button class="btn btn-success rounded-0 w-25 modal_search_button" type="submit">Search</button>
+                    </form>
+                    <div class="container-fluid modal_help_container mt-3">
+                        <a href="" class="btn btn-outline-warning btn-sm modal_help_link">Order</a>
+                        <a href="" class="btn btn-outline-warning btn-sm modal_help_link">How to contact</a>
+                        <a href="" class="btn btn-outline-warning btn-sm modal_help_link">Courses</a>
+                        <a href="" class="btn btn-outline-warning btn-sm modal_help_link">For Children</a>
+                        <a href="" class="btn btn-outline-warning btn-sm modal_help_link">Promo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-md p-3">
+        <div class="container-fluid">
+            <button class="navbar-toggler" style="outline: none;" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <img src="images/bars-solid.svg" alt="" style="height:20px">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <a class="navbar-brand d-none d-md-block" href="#">
+                    <img class="header_logo" src="images/logo.png" alt="logo">
+                </a>
+                <div class="d-block m-auto d-md-flex">
+                    <a class="nav-link text-white p-0 mx-4 my-2 my-md-0 nav_link" href="#">HOME</a>
+                    <a class="nav-link text-white p-0 mx-4 my-2 my-md-0 nav_link" href="#">PRODUCT</a>
+                    <a class="nav-link text-white p-0 mx-4 my-2 my-md-0 nav_link" href="#">PROMO</a>
+                    <a class="nav-link text-white p-0 mx-4 my-2 my-md-0 nav_link" href="#">ABOUT</a>
+                    <a class="nav-link text-white p-0 mx-4 my-2 my-md-0 nav_link" href="#">CONTACT</a>
+                </div>
+            </div>
+            <a class="" href="#" data-toggle="modal" data-target="#exampleModal">
+                <img class="search_button mx-4 mx-md-0 " src="images/magnifying-glass-solid.svg" alt="search button">
+            </a>
+        </div>
+    </nav>
+
+    <div class="container-fluid first_block">
+        <div class="row">
+            <div class="col-12 col-md-6 text-white py-5">
+                <div class="container d-flex w-100 my-5">
+                    <h1 class="main_heading">
+                        Dance school
+                    </h1>
+                </div>
+                <div class="container d-flex w-100 my-5">
+                    <p class="first_block_text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+                        voluptates adipisci officia ullam perferendis maiores vel iusto provident error ex temporibus
+                        commodi corporis dicta, optio illo doloribus perspiciatis quidem quis?
+                    </p>
+                </div>
+                <div class="container d-flex w-100 my-5">
+                    <a class="btn btn-warning text-white btn-lg button" href="#">
+                        Register now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid second_block bg-warning py-5">
+        <h2 class="second_block_heading text-center text-white mb-5">
+            DANCE TOUR
+        </h2>
+        <p class="second_block_text text-center text-white">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque illo aut perspiciatis animi ut debitis a
+            esse delectus voluptatem rerum nihil corporis, est quas laboriosam repudiandae sint odit omnis alias?
+        </p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card w-75 mt-4">
+                        <img class="card-img-top w-100" src="images/image2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-white text-center second_block_card_heading">
+                                America
+                            </h5>
+                            <p class="card-text text-white text-center second_block_card_text">
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card w-75 mt-4">
+                        <img class="card-img-top w-100" src="images/image3.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-white text-center second_block_card_heading">
+                                Asia
+                            </h5>
+                            <p class="card-text text-white text-center second_block_card_text">
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card w-75 mt-4">
+                        <img class="card-img-top w-100" src="images/image4.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-white text-center second_block_card_heading">
+                                Australia
+                            </h5>
+                            <p class="card-text text-white text-center second_block_card_text">
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid third_block py-5">
+        <h2 class="third_block_heading text-center text-white mb-5">
+            PRICING
+        </h2>
+        <p class="third_block_text text-center text-white">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque illo aut perspiciatis animi ut debitis a
+            esse delectus voluptatem rerum nihil corporis, est quas laboriosam repudiandae sint odit omnis alias?
+        </p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card w-75 bg-warning mt-4 p-5">
+                        <img class="card-img-top" src="images/image5.png" alt="Card image cap">
+                        <div class="card-body px-0 pb-0">
+                            <h5 class="card-title text-white third_block_card_heading">
+                                Basic
+                            </h5>
+                            <p class="card-text text-white third_block_card_text">
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                            <a href="#" class="btn btn-secondary text-white btn-block button">
+                                $150.00
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card w-75 bg-warning mt-4 p-5">
+                        <img class="card-img-top" src="images/image5.png" alt="Card image cap">
+                        <div class="card-body px-0 pb-0">
+                            <h5 class="card-title text-white third_block_card_heading">
+                                Professional
+                            </h5>
+                            <p class="card-text text-white third_block_card_text">
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                            <a href="#" class="btn btn-secondary text-white btn-block button">
+                                $200.00
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card w-75 bg-warning mt-4 p-5">
+                        <img class="card-img-top" src="images/image5.png" alt="Card image cap">
+                        <div class="card-body px-0 pb-0">
+                            <h5 class="card-title text-white third_block_card_heading">
+                                Ultimate
+                            </h5>
+                            <p class="card-text text-white third_block_card_text">
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                            <a href="#" class="btn btn-secondary text-white btn-block button">
+                                $250.00
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid fourth_block">
+        <div class="row">
+            <div class="col-md-6 fourth_block_image_container">
+
+            </div>
+            <div class="col-md-6 bg-warning py-5">
+                <div class="container">
+                    <h2 class="text-white my-4 fourth_block_heading">
+                        AMAZING DANCE
+                    </h2>
+                    <p class="text-white my-4 fourth_block_text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio corporis aliquid iusto
+                        perferendis.
+                        Alias assumenda optio molestias fugit deleniti ratione, aspernatur ex placeat eligendi
+                        voluptate,
+                        nisi architecto natus dolorem illum?
+                    </p>
+                    <button class="btn btn-secondary text-white my-4 button">
+                        Read more
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid fifth_block">
+        <div class="row">
+            <div class="col-md-6 bg-warning py-5">
+                <div class="container">
+                    <h2 class="text-white my-4 fifth_block_heading">
+                        BEST DANCE
+                    </h2>
+                    <p class="text-white my-4 fifth_block_text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio corporis aliquid iusto
+                        perferendis.
+                        Alias assumenda optio molestias fugit deleniti ratione, aspernatur ex placeat eligendi
+                        voluptate,
+                        nisi architecto natus dolorem illum?
+                    </p>
+                    <button class="btn btn-secondary text-white my-4 button">
+                        Read more
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 fifth_block_image_container"></div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid sixth_block py-5">
+        <h2 class="text-white text-center sixth_block_heading my-5">
+            OUR STATISTICS
+        </h2>
+        <div class="container sixth_block_text_container">
+            <p class="text-center text-white sixth_block_text mb-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ad ipsum dolore quasi accusamus
+                dignissimos
+                repudiandae magnam! Obcaecati incidunt ea odio saepe dicta architecto laborum, voluptates commodi
+                doloremque
+                eveniet. Pariatur.
+            </p>
+        </div>
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-md-4 my-5">
+                    <p class="text-white text-center statistic">
+                        <span class="statistics_number">1240+</span>
+                        <br>
+                        Club
+                    </p>
+                </div>
+                <div class="col-md-4 my-5">
+                    <p class="text-white text-center statistic">
+                        <span class="statistics_number">2000+</span>
+                        <br>
+                        Active members
+                    </p>
+                </div>
+                <div class="col-md-4 my-5">
+                    <p class="text-white text-center statistic">
+                        <span class="statistics_number">1000+</span>
+                        <br>
+                        Community
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid py-5 bg-warning seventh_block">
+        <h2 class="text-center text-white seventh_block_heading">
+            Subscribe
+        </h2>
+        <div class="container">
+            <p class="text-center text-white seventh_block_text my-5">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, hic eum! Architecto enim dolor earum
+                vel
+                ducimus, dignissimos deserunt harum? Excepturi corporis officiis earum ut ipsa eius quo laborum libero.
+            </p>
+        </div>
+        <div class="container d-flex justify-content-center">
+            <form class="form-inline d-flex justify-content-center">
+                <input class="form-control rounded-0 w-100 text-center py-3 input" type="search"
+                    placeholder="Your Email" aria-label="Search">
+                <button class="btn btn-secondary  rounded-0 w-100 button" type="submit">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="container-fluid footer pt-5">
+
+        <div class="row">
+            <div class="col-md-6 pr-5 mb-5">
+                <h3 class="text-white footer_column_heading mb-5">
+                    Musicology
+                </h3>
+                <p class="text-white footer_column_text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi beatae aut quibusdam, tempora
+                    natus quos fuga libero voluptatum unde doloremque labore esse nihil reiciendis nobis molestiae
+                    voluptas cupiditate nemo blanditiis!
+                </p>
+            </div>
+            <div class="col-md-2 mb-5">
+                <h3 class="text-white footer_column_heading mb-5">
+                    About
+                </h3>
+                <div class="container-fluid d-flex flex-column">
+                    <a href="#" class="text-white footer_link">History</a>
+                    <a href="#" class="text-white footer_link">Our Team</a>
+                    <a href="#" class="text-white footer_link">Brand Guidelines</a>
+                    <a href="#" class="text-white footer_link">Terms & Condition</a>
+                    <a href="#" class="text-white footer_link">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="col-md-2 mb-5">
+                <h3 class="text-white footer_column_heading mb-5">
+                    Services
+                </h3>
+                <div class="container-fluid d-flex flex-column">
+                    <a href="#" class="text-white footer_link">How to Order</a>
+                    <a href="#" class="text-white footer_link">Our Product</a>
+                    <a href="#" class="text-white footer_link">Order Status</a>
+                    <a href="#" class="text-white footer_link">Promo</a>
+                    <a href="#" class="text-white footer_link">Payment Method</a>
+                </div>
+            </div>
+            <div class="col-md-2 mb-5">
+                <h3 class="text-white footer_column_heading mb-5">
+                    Other
+                </h3>
+                <div class="container-fluid d-flex flex-column">
+                    <a href="#" class="text-white footer_link">Contact Us</a>
+                    <a href="#" class="text-white footer_link">Help</a>
+                    <a href="#" class="text-white footer_link">Privacy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
